@@ -1,0 +1,17 @@
+spring:
+#  cache:
+#    jcache:
+#      config: 'classpath:ehcache.xml'
+
+  batch:
+    jdbc:
+      isolation-level-for-create: READ_COMMITTED
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    username: c##admin
+    password: admin
+    url: jdbc:oracle:thin:@localhost:1521/FREE
+logging:
+  level:
+    root: INFO
+    org.springframework.cache: TRACE
